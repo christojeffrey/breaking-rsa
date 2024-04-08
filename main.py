@@ -14,7 +14,8 @@ try:
         message_asli = "KRIPTOGRAFIITB{" + str(random.randint(1,10000))+ "}"
         message_asli = message_asli.encode('utf-8')
         message_int = bytes_to_long(message_asli)
-        version = random.choice(paket_soal)
+        # version = random.choice(paket_soal)
+        version = "E"
         print(f"paket_soal = {version}\n")
         if version == "A":
             while True:
@@ -68,8 +69,10 @@ try:
                 print(":((((((\n")
         except Exception as e:
             print("Error\n")
+            print(e)
 except Exception as e:
     print("Error\n")
+    print(e)
 finally:
     if counter == tahap:
         print(f"Uhuyyyy {flag}\n")
