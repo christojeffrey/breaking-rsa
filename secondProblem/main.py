@@ -12,7 +12,10 @@ def main():
     while GCD(e, tot) != 1:
         e = random.randint(2**15, 2**16)
     d = pow(e, -1, tot)
-
+    print(f"n: {n}")
+    print(f"e: {e}")
+    print(f"d: {d}")
+    
 
     nomor_arsip_admin = random.randint(2, 100000000)
     while isPrime(nomor_arsip_admin):

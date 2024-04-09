@@ -14,8 +14,7 @@ try:
         message_asli = "KRIPTOGRAFIITB{" + str(random.randint(1,10000))+ "}"
         message_asli = message_asli.encode('utf-8')
         message_int = bytes_to_long(message_asli)
-        # version = random.choice(paket_soal)
-        version = "E"
+        version = random.choice(paket_soal)
         print(f"paket_soal = {version}\n")
         if version == "A":
             while True:
